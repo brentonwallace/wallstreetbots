@@ -15,4 +15,7 @@ submissions = list(api.search_submissions(after=start_epoch,
 
 
 for submission in submissions:
-    print(submission)
+    #print(submission)
+    print(submission.created_utc)
+    print(submission.title)
+    print(submission.url)
